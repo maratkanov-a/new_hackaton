@@ -1,0 +1,16 @@
+#upload{
+    border-bottom: none !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    background: #88b3ef;
+    border: 2px solid #88b3ef;
+}

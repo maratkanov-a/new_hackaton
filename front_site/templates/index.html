@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="fh5co-main">
+        <div class="container">
+
+            <div class="row">
+
+                <div id="fh5co-board" data-columns>
+
+                    {% for object in object_list %}
+                        <div class="item">
+                            <div class="animate-box">
+                                <a href="{% url "front_site:event_detail" pk=object.id %}"
+                                   class="fh5co-board-img">
+                                    <img src="{{ object.img.url }}" alt="Free HTML5 Bootstrap template" >
+                                </a>
+                            </div>
+                            <div class="fh5co-desc">
+                                {{ object.name }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

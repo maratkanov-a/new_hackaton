@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="fh5co-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>{{ events.name }}</h2>
+                    <div class="fh5co-spacer fh5co-spacer-sm"></div>
+                    <p>
+                        <img src="{{ events.img.url }}" class="img-rounded img-responsive"></p>
+
+                    <p>{{ events.time_start }} - {{ events.time_end }}</p>
+
+                    <p>{{ events.description }}</p>
+
+                    <a class="btn btn-primary" href="{% url "front_site:event_subscribe" pk=events.id %}">I'm in</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
